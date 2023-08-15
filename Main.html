@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC</title>
+    <link rel="icon" type="image/x-icon" href="kfcLogo.svg">
+    <Style>
+      body {
+        height: 900;
+        margin: 0;
+        background-color: rgb(158, 17, 17);
+      }
+
+      .nav {
+        height: 100px;
+        width: 100%;
+        background-color: #1a1c1d;
+        background-color: #a3080c;
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+
+      #MainLogo {
+        margin-left: -10px;
+        margin-top: -10px;
+      }
+
+      #SearchItem {
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 20px;
+        padding: 10px;
+        width: 50%;
+        margin-left: 5%;
+        background-color: #e4e4e4;
+      }
+
+      .content {
+        height: 720px;
+        width: 100%;
+        background-color: whitesmoke;
+        box-shadow: 5px 5px 10px 2px rgb(0, 0, 0);
+        margin: 0%;
+      }
+
+      #b1 {
+        margin-right: 10%;
+        margin-top: 6%;
+        box-shadow: 5px 5px 10px 2px rgb(0, 0, 0);
+      }
+
+      #b1Text1,
+      #b1Text2,
+      .price {
+        font-family: cursive;
+        font-size: 60px;
+        margin-left: 15%;
+      }
+
+      #b1Text1 {
+        margin-left: 20%;
+      }
+
+      #b1:hover {
+        box-shadow: 10px 10px 10px 10px rgb(0, 0, 0);
+      }
+
+      .price {
+        font-family: cursive;
+        margin: 0%;
+        margin-left: 22%;
+        color: rgb(157, 0, 255);
+      }
+
+      #Bag {
+        padding: 15px;
+        background-color: yellow;
+        border-radius: 20px;
+        width: 10%;
+        margin-left: 23.5%;
+        margin-top: 58px;
+        font-weight: bold;
+        text-transform: uppercase;
+        box-shadow: 1px 1px 2px 2px rgb(0, 0, 0);
+      }
+
+      #Bag:hover {
+        background-color: #f03eb4;
+        color: white;
+      }
+
+      .content2 {
+        height: 250mm;
+        width: 100%;
+        background-color: #6dc8d2;
+        margin-top: -10%;
+      }
+
+      video {
+        margin-left: 23%;
+        margin-top: -8%;
+        margin-bottom: -9%;
+      }
+
+      h1:nth-child(1) {
+        font-family: cursive;
+        text-align: center;
+        font-size: 80px;
+        color: rgb(255, 255, 0);
+        margin-top: 3%;
+        margin-bottom: 0%;
+        margin-left: 35%;
+      }
+
+      h1:nth-child(2) {
+        font-family: cursive;
+        text-align: center;
+        font-size: 80px;
+        color: rgb(255, 255, 0);
+        margin-top: 3%;
+        margin-bottom: 0%;
+      }
+
+      #tasty {
+        color: rgb(254, 0, 0);
+      }
+
+      marquee {
+        color: white;
+        font-size: x-large;
+        text-transform: uppercase;
+      }
+
+      #min {
+        color: #6600fe7c;
+        font-size: xx-large;
+      }
+
+      .card {
+        position: absolute;
+        box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+        max-width: 350px;
+        margin: 30px;
+        margin-top: 70px;
+        text-align: center;
+        font-family: arial;
+      }
+
+      .price {
+        color: rgb(226, 226, 226);
+        font-size: 24px;
+        margin-left: -3%;
+        margin-top: -5%;
+      }
+
+      .card button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #ff0202;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      .card button:hover {
+        opacity: 0.7;
+      }
+
+      h2,
+      p {
+        color: wheat;
+      }
+
+      .content3 {
+        width: 100%;
+        height: 50mm;
+        background-color: #f8f8f8;
+      }
+
+      .card:nth-child(2),
+      .card:nth-child(4) {
+        margin-left: 38%;
+      }
+
+      .card:nth-child(3),
+      .card:nth-child(5) {
+        margin-left: 75%;
+      }
+
+      .card:nth-child(4),
+      .card:nth-child(5),
+      .card:nth-child(6) {
+        margin-top: 45%;
+      }
+
+      .empty {
+        margin-top: 45%;
+        height: 100mm;
+        background-color: black;
+      }
+
+      #footlogo {
+        margin-top: 30%;
+        margin-left: -5%;
+        margin-bottom: 0%;
+      }
+
+      .insidenav {
+        display: flex;
+        align-items: center;
+      }
+
+      .navbtn {
+        padding: 10px;
+        text-transform: uppercase;
+        border-radius: 10px;
+        width: 10%;
+        font-weight: bold;
+      }
+
+      #btn1 {
+        width: 30%;
+        margin-left: 30%;
+        background-color: black;
+        color: whitesmoke;
+        border: 1px solid white;
+        margin-right: 2%;
+      }
+
+      #btn1:hover {
+        border: 2px solid white;
+        color: wheat;
+      }
+
+      #btn2 {
+        color: #000000;
+        border: 1px solid rgb(255, 255, 255);
+        margin-right: 2%;
+        margin-left: 0%;
+        background-color: rgb(255, 238, 0);
+      }
+
+      #btn2:hover {
+        border: 2px solid rgb(7, 7, 7);
+        color: wheat;
+        background-color: black;
+      }
+
+      .empty {
+        height: 110mm;
+        width: 100%;
+        background-color: #000000;
+        color: yellow
+      }
+
+      #cr {
+        width: 10%;
+        margin-top: 103mm;
+        margin-left: 5px;
+      }
+
+      .footer {
+        display: flex;
+      }
+
+      table {
+        color: white;
+        margin-bottom: 2%;
+        margin-top: 10%;
+        margin-left: 50%;
+        border-collapse: collapse;
+        text-align: center;
+        width: 150mm;
+      }
+
+      th,
+      td {
+        margin-left: 20px;
+        margin-bottom: 10px;
+        padding-top: 40px;
+        padding-bottom: 0px;
+        margin-right: 10px;
+      }
+
+      td:hover,
+      .col4:hover {
+        font-weight: bold;
+        font-size: medium;
+      }
+    </Style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="insidenav">
+        <img id="MainLogo" src="MainLogo.png" alt="KFC" height="150" width="150">
+        <input type="text" placeholder="Search Your Yummy Food" id="SearchItem">
+        <button class="navbtn" id="btn1">Get Order</button>
+        <button class="navbtn" id="btn2">Login</button>
+      </div>
+      <div class="content">
+        <img src="ban.jpg" alt="" height="550px" width="30%" id="b1" align="right">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <b id="b1Text1">Delicious</b>
+        <br>
+        <b id="b1Text2">Fried Chicken</b>
+        <p class="price">Rs.599</p>
+        <button id="Bag">Add To Bag</button>
+      </div>
+      <div class="content2">
+        <h1>Hungry??</h1>
+        <h1>Enjoy <b id="tasty">Tasty</b> Food </h1>
+        <video src="kfcVideo.mp4" muted height="800" width="800" autoplay></video>
+        <marquee behaviour="scroll" scrollamount="12">Free Delivery on Orders Above Rs.1499 <span id="min">Get Your Tasty Food In Minutes..!</span>
+        </marquee>
+      </div>
+      <div class="content3">
+        <div class="card">
+          <img src="f1.jpg" alt="Food1" style="width:100%">
+          <h2>5 Leg Pc & 2 Dips Bucket</h2>
+          <p class="price">₹519.05</p>
+          <p>Save Rs. 120 on 5 Peri Peri Leg Pieces, paired with 2 delicious dips (20gm each)</p>
+          <p>
+            <button>Add to Bag</button>
+          </p>
+        </div>
+        <div class="card">
+          <img src="f2.jpg" alt="Food1" style="width:100%">
+          <h2>Peri Peri 10 Pc Chicken Strips & 2 Dips</h2>
+          <p class="price">₹499.05</p>
+          <p>Save 24% on 10 Spicy Peri Peri chicken boneless strips with 2 Dips</p>
+          <p>
+            <button>Add to Bag</button>
+          </p>
+        </div>
+        <div class="card">
+          <img src="f3.jpg" alt="Food1" style="width:100%">
+          <h2>Peri Peri 10 Leg Pc & 4 Dips</h2>
+          <p class="price">₹948.57</p>
+          <p>Save Rs. 334 on 10 Peri Peri Leg Pieces & 4 Dips (20 gm each)</p>
+          <p>
+            <button>Add to Bag</button>
+          </p>
+        </div>
+        <div class="card">
+          <img src="f4.jpg" alt="Food1" style="width:100%">
+          <h2>5 Leg Pc & 2 Dips Bucket</h2>
+          <p class="price">₹519.05</p>
+          <p>Save Rs. 120 on 5 Peri Peri Leg Pieces, paired with 2 delicious dips (20gm each)</p>
+          <p>
+            <button>Add to Bag</button>
+          </p>
+        </div>
+        <div class="card">
+          <img src="f1.jpg" alt="Food1" style="width:100%">
+          <h2>Peri Peri 10 Pc Chicken Strips & 2 Dips</h2>
+          <p class="price">₹499.05</p>
+          <p>Save 24% on 10 Spicy Peri Peri chicken boneless strips with 2 Dips</p>
+          <p>
+            <button>Add to Bag</button>
+          </p>
+        </div>
+        <div class="card">
+          <img src="f2.jpg" alt="Food1" style="width:100%">
+          <h2>Peri Peri 10 Leg Pc & 4 Dips</h2>
+          <p class="price">₹948.57</p>
+          <p>Save Rs. 334 on 10 Peri Peri Leg Pieces & 4 Dips (20 gm each)</p>
+          <p>
+            <button>Add to Bag</button>
+          </p>
+        </div>
+      </div>
+      <div class="empty"></div>
+      <div class="footer">
+        <div id="cr" style="text-align: center;"></div>
+        <div class="data">
+          <table>
+            <tr>
+              <th>Legal</th>
+              <th>KFC India</th>
+              <th>KFC Food</th>
+              <th>Support</th>
+            </tr>
+            <tr>
+              <td>Terms and Conditions</td>
+              <td>About KFC</td>
+              <td>Menu</td>
+              <td>Get Help</td>
+            </tr>
+            <tr>
+              <td>Privacy Policy</td>
+              <td>KFC Care</td>
+              <td>Order Lookup</td>
+              <td>Contact Us</td>
+            </tr>
+            <tr>
+              <td class="col4">Disclaimer</td>
+              <td class="col4">Careers</td>
+              <td class="col4">Gift Card</td>
+              <td class="col4">KFC Feedback</td>
+            </tr>
+            <tr>
+              <td class="col4">Caution Notice</td>
+              <td class="col4">Our Golden Past</td>
+              <td class="col4">Nutrition & Allergen</td>
+              <td class="col4">Privacy Policy</td>
+            </tr>
+          </table>
+        </div>
+        <div id="footlogo">
+          <p>© 2023 KFC, Inc.</p>
+          <img src="kfcwhitelogo.png" alt="KFC Logo" align="right" height="50" width="100">
+        </div>
+      </div>
+  </body>
+</html>
